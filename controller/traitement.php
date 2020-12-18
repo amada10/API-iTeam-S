@@ -7,6 +7,7 @@ function home(){
 
 function liste_membres(){
     $liste_membres = obtenir_les_membres();
-    $liste_membres_json = json_encode($liste_membres);
-    header('location:view/home.php?liste_membres='.$liste_membres_json);
+	
+    header('Content-Type: application/json');
+    echo json_encode($liste_membres);
 }
