@@ -8,6 +8,6 @@ function home(){
 function liste_membres(){
     $liste_membres = obtenir_les_membres();
 	
-    header('Content-Type: application/json');
+    header('Content-type: application/json; charset=utf-8');
     echo json_encode($liste_membres);
 }
