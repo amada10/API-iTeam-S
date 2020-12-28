@@ -9,6 +9,7 @@ try{
         }
     }
     else{
+        // tokony 404 page lesy ato @ntsoa2112 an #gaetan1903
         home();
     } 
 }
