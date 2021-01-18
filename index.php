@@ -19,3 +19,4 @@ try{
 catch (Exception $e){ //Si il y a une erreur, on affiche l'erreur
     echo "Erreur :".$e->getMessage();
 }
+
