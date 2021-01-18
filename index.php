@@ -7,6 +7,10 @@ try{
         if($action == "liste_membres"){
             liste_membres();
         }
+        elseif($action == "one_membre" && isset($_GET["id"])){
+            $id = intval(htmlspecialchars($_GET["id"]));
+            one_membre($id);
+        }
     }
     else{
         home();

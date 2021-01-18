@@ -8,5 +8,11 @@ function home(){
 function liste_membres(){
     $liste_membres = obtenir_les_membres();
     $liste_membres_json = json_encode($liste_membres);
-    header('location:view/home.php?liste_membres='.$liste_membres_json);
+    echo $liste_membres_json;
+}
+
+function one_membre($id){
+    $one_membre = obtenir_one_membre($id);
+    $one_membre_json = json_encode($one_membre);
+    echo $one_membre_json;
 }
